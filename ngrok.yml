@@ -1,0 +1,9 @@
+version: "2"
+authtoken: 2xvecUE0JvWq0dmVvN1553NFLmU_2pAAYGwLwvLR1L78LTmj6
+tunnels:
+  agent:
+    proto: http
+    addr: 8000
+  launcher:
+    proto: http
+    addr: 8001

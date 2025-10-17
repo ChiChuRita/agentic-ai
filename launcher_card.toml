@@ -1,0 +1,42 @@
+name                = "Math Evaluator Launcher"
+description         = '''
+## Launcher Role
+This is the launcher service for the Math Evaluator Green Agent on AgentBeats.
+The launcher manages session creation, tracks evaluation progress, and coordinates between white agents and the green evaluator agent.
+
+## Responsibilities
+1. **Session Creation**: Initializes new evaluation sessions with unique session IDs
+2. **Session Tracking**: Monitors which problems have been attempted by each agent
+3. **Progress Monitoring**: Provides status information about session completion
+4. **Agent Coordination**: Routes requests between white agents and the green agent
+
+## Session Lifecycle
+1. White agent requests a new session from the launcher
+2. Launcher creates a session ID and tracks it
+3. White agent requests problems through the agent URL
+4. Launcher monitors progress and completion status
+5. Session remains active until all problems are attempted
+'''
+url                 = "http://localhost:8001/"
+version             = "1.0.0"
+
+defaultInputModes   = ["text"]
+defaultOutputModes  = ["text"]
+
+[capabilities]
+streaming               = false
+
+[[skills]]
+id          = "start_session"
+name        = "Start Evaluation Session"
+description = "Creates a new evaluation session with a unique session ID and initializes problem tracking."
+tags        = ["session", "launcher", "initialization", "a2a"]
+examples    = ["Start a new evaluation session", "Create a session for math problem evaluation"]
+
+[[skills]]
+id          = "get_session_status"
+name        = "Get Session Status"
+description = "Retrieves the current status of an evaluation session, including problems attempted, remaining problems, and completion status."
+tags        = ["session", "status", "tracking", "a2a"]
+examples    = ["Get status for session abc123", "Check how many problems remain in my session"]
+

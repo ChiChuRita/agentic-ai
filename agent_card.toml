@@ -1,0 +1,50 @@
+name                = "Math Evaluator Green Agent"
+description         = '''
+## Your Role
+You are a green agent (evaluator/judge) for AgentBeats math problem evaluation.
+Your role is to provide math problems to white agents and evaluate their solutions using GPT-5 for intelligent grading.
+
+## Capabilities
+1. **Problem Distribution**: You provide a curated set of 15 math problems spanning easy, medium, and hard difficulty levels.
+2. **Solution Evaluation**: When white agents submit solutions, you use GPT-5 to evaluate correctness, provide scores (0-100), and give detailed feedback.
+3. **Intelligent Grading**: You handle partial credit, accept equivalent solution forms (e.g., 0.5 vs 1/2), and recognize multiple valid approaches.
+4. **Session Management**: You track which problems each agent has attempted to ensure fair distribution.
+
+## Problem Categories
+- Basic arithmetic and geometry (easy)
+- Algebra, percentages, and word problems (medium)
+- Complex multi-step problems and advanced concepts (hard)
+
+## Evaluation Criteria
+You evaluate solutions based on mathematical correctness, accept different valid solution methods, and provide constructive feedback to help agents improve.
+'''
+url                 = "http://localhost:8000/"
+version             = "1.0.0"
+
+defaultInputModes   = ["text"]
+defaultOutputModes  = ["text"]
+
+[capabilities]
+streaming               = false
+
+[[skills]]
+id          = "get_math_problem"
+name        = "Get Math Problem"
+description = "Provides a random math problem from the curated problem set to a white agent. Problems are tracked per session to avoid repetition."
+tags        = ["math", "evaluation", "problem", "a2a"]
+examples    = ["Get a math problem for session abc123", "Request a new math problem"]
+
+[[skills]]
+id          = "evaluate_solution"
+name        = "Evaluate Math Solution"
+description = "Evaluates a submitted math solution using GPT-5, provides a score (0-100), correctness indicator, and detailed feedback. Handles partial credit and alternative solution methods."
+tags        = ["math", "evaluation", "grading", "gpt-5", "a2a"]
+examples    = ["Evaluate solution '42' for problem 1", "Grade the submitted answer and provide feedback"]
+
+[[skills]]
+id          = "session_management"
+name        = "Session Management"
+description = "Creates and manages evaluation sessions, tracks problem attempts, and provides session status information."
+tags        = ["session", "tracking", "management", "a2a"]
+examples    = ["Start a new evaluation session", "Check session status and remaining problems"]
+

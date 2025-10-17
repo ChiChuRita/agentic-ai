@@ -1,0 +1,109 @@
+{
+  "problems": [
+    {
+      "id": "1",
+      "difficulty": "easy",
+      "problem": "What is 15 + 27?",
+      "answer": "42",
+      "explanation": "Simple addition: 15 + 27 = 42"
+    },
+    {
+      "id": "2",
+      "difficulty": "easy",
+      "problem": "Calculate 144 ÷ 12",
+      "answer": "12",
+      "explanation": "144 divided by 12 equals 12"
+    },
+    {
+      "id": "3",
+      "difficulty": "medium",
+      "problem": "Solve for x: 3x + 7 = 22",
+      "answer": "5",
+      "explanation": "3x = 22 - 7 = 15, so x = 15 ÷ 3 = 5"
+    },
+    {
+      "id": "4",
+      "difficulty": "medium",
+      "problem": "What is 25% of 80?",
+      "answer": "20",
+      "explanation": "25% = 0.25, and 0.25 × 80 = 20"
+    },
+    {
+      "id": "5",
+      "difficulty": "medium",
+      "problem": "If a rectangle has a length of 12 cm and width of 5 cm, what is its area?",
+      "answer": "60",
+      "explanation": "Area = length × width = 12 × 5 = 60 cm²"
+    },
+    {
+      "id": "6",
+      "difficulty": "hard",
+      "problem": "A store has 240 apples. If 3/8 of them are sold, how many apples remain?",
+      "answer": "150",
+      "explanation": "Sold: 240 × 3/8 = 90. Remaining: 240 - 90 = 150"
+    },
+    {
+      "id": "7",
+      "difficulty": "hard",
+      "problem": "Solve for x: 2x² - 8 = 10",
+      "answer": "3",
+      "explanation": "2x² = 18, x² = 9, x = ±3 (positive answer is 3)"
+    },
+    {
+      "id": "8",
+      "difficulty": "easy",
+      "problem": "What is the perimeter of a square with side length 9?",
+      "answer": "36",
+      "explanation": "Perimeter = 4 × side = 4 × 9 = 36"
+    },
+    {
+      "id": "9",
+      "difficulty": "medium",
+      "problem": "If a car travels 180 miles in 3 hours, what is its average speed in miles per hour?",
+      "answer": "60",
+      "explanation": "Speed = distance ÷ time = 180 ÷ 3 = 60 mph"
+    },
+    {
+      "id": "10",
+      "difficulty": "hard",
+      "problem": "A number is increased by 20% and then decreased by 20%. What is the net percentage change?",
+      "answer": "-4",
+      "explanation": "After +20%: 1.2x. After -20%: 1.2x × 0.8 = 0.96x. Net change: -4%"
+    },
+    {
+      "id": "11",
+      "difficulty": "medium",
+      "problem": "Calculate the sum of all integers from 1 to 10",
+      "answer": "55",
+      "explanation": "1+2+3+4+5+6+7+8+9+10 = 55"
+    },
+    {
+      "id": "12",
+      "difficulty": "easy",
+      "problem": "What is 7 × 8?",
+      "answer": "56",
+      "explanation": "7 multiplied by 8 equals 56"
+    },
+    {
+      "id": "13",
+      "difficulty": "hard",
+      "problem": "If the sum of three consecutive integers is 48, what is the largest of the three numbers?",
+      "answer": "17",
+      "explanation": "Let x be the first integer. x + (x+1) + (x+2) = 48, so 3x + 3 = 48, x = 15. The largest is x+2 = 17"
+    },
+    {
+      "id": "14",
+      "difficulty": "medium",
+      "problem": "What is the value of 2³ + 3²?",
+      "answer": "17",
+      "explanation": "2³ = 8, 3² = 9, so 8 + 9 = 17"
+    },
+    {
+      "id": "15",
+      "difficulty": "easy",
+      "problem": "If you have 100 dollars and spend 35 dollars, how much do you have left?",
+      "answer": "65",
+      "explanation": "100 - 35 = 65 dollars"
+    }
+  ]
+}
